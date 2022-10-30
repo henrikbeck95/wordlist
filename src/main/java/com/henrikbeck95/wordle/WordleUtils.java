@@ -1,8 +1,10 @@
 package com.henrikbeck95.wordle;
 
+import java.util.ArrayList;
+
 import com.henrikbeck95.sort.SortVector;
 
-public class WordleDisplayUtils {
+public class WordleUtils {
 	protected static String attributeEmptyValueIfThereIsNoWordleIndex(int index, Wordle wordle) {
 		if (index < wordle.getArrayList().size()) {
 			return wordle.getArrayList().get(index);
@@ -11,12 +13,12 @@ public class WordleDisplayUtils {
 		}
 	}
 
-	protected static int[] rankWordleAccordingToTheirSize(Wordle... wordles) {
-		int[] array = new int[wordles.length];
+	protected static int[] rankWordleAccordingToTheirSize(ArrayList<Wordle> wordles) {
+		int[] array = new int[wordles.size()];
 
 		// Fill the vector with Wordle size
-		for (int i = 0; i < wordles.length; i++) {
-			array[i] = wordles[i].getArrayList().size();
+		for (int i = 0; i < wordles.size(); i++) {
+			array[i] = wordles.get(i).getArrayList().size();
 		}
 
 		// Sort the vector

@@ -1,21 +1,43 @@
 package com.henrikbeck95.wordle;
 
+import java.util.ArrayList;
+
 import com.henrikbeck95.string.StringUtils;
 import com.henrikbeck95.wordle.Wordle;
 
-public class WordleDisplay {
-	public static void display(Wordle... wordles) {
-		int wordleSizeRanking[] = WordleDisplayUtils.rankWordleAccordingToTheirSize(wordles);
-		String[] wordleArrayListAux = new String[wordles.length];
+// ArrayList<Wordle> arrayListWordles
 
-		for (int i = 0; i < wordleSizeRanking[wordles.length - 1]; i++) {
+public class WordleDisplay {
+	// MUST IMPROVE THE PERFORMANCE
+	public static void display(ArrayList<Wordle> wordles) {
+		String[] wordleArrayListAux = new String[wordles.size()];
+		int wordleSizeRanking[] = WordleUtils.rankWordleAccordingToTheirSize(wordles);
+
+		for (int i = 0; i < wordleSizeRanking[wordles.size() - 1]; i++) {
 			for (int j = 0; j < wordleArrayListAux.length; j++) {
-				wordleArrayListAux[j] = WordleDisplayUtils.attributeEmptyValueIfThereIsNoWordleIndex(i, wordles[j]);
+				wordleArrayListAux[j] = WordleUtils.attributeEmptyValueIfThereIsNoWordleIndex(i, wordles.get(j));
 			}
 
 			// Display
 			displayLine(i, wordleArrayListAux);
 		}
+	}
+
+	// MUST IMPROVE THE PERFORMANCE
+	private static void displayLine(int index, String... words) {
+		int wordFormatLength = 30;
+
+		displayLineHeader(index, wordFormatLength, words.length);
+
+		String[] aux = new String[words.length + 1];
+
+		for (int i = 0; i < words.length; i++) {
+			aux[i] = words[i];
+		}
+
+		aux[words.length] = "" + (index + 1);
+
+		System.out.printf(displayLineFormat(index, wordFormatLength, words.length), aux);
 	}
 
 	private static void displayLineHeader(int index, int wordFormatLength, int amountOfWordle) {
@@ -41,22 +63,6 @@ public class WordleDisplay {
 	 * System.out.printf("%7$7s | %1$30s | %2$30s | %3$30s | %4$30s | %5$30s | %6$27s     |%n", strArr );
 	 */
 	// @formatter:on
-
-	private static void displayLine(int index, String... words) {
-		int wordFormatLength = 30;
-
-		displayLineHeader(index, wordFormatLength, words.length);
-
-		String[] aux = new String[words.length + 1];
-
-		for (int i = 0; i < words.length; i++) {
-			aux[i] = words[i];
-		}
-
-		aux[words.length] = "" + (index + 1);
-
-		System.out.printf(displayLineFormat(index, wordFormatLength, words.length), aux);
-	}
 
 	private static String displayLineHeaderFormat(int index, int size, int amountOfWordle) {
 		String aux = "";
