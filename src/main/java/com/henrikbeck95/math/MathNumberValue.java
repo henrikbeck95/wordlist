@@ -1,4 +1,4 @@
-package wordlist.math;
+package com.henrikbeck95.math;
 
 public class MathNumberValue {
 	public static int getHigher(int a, int b) {

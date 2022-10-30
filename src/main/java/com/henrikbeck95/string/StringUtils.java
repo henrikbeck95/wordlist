@@ -1,4 +1,4 @@
-package wordlist.string;
+package com.henrikbeck95.string;
 
 public class StringUtils {
 	public static String lineFormattedGenerate(int index, String wordFirst) {

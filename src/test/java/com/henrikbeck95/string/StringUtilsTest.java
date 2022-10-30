@@ -1,8 +1,10 @@
-package wordlist.string;
+package com.henrikbeck95.string;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import com.henrikbeck95.string.StringUtils;
 
 class StringUtilsTest {
 	/*

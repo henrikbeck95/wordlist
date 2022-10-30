@@ -1,4 +1,4 @@
-package wordlist.os;
+package com.henrikbeck95.os;
 
 public class OsInfo {
 	private static String OS = System.getProperty("os.name").toLowerCase();

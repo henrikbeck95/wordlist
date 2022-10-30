@@ -1,8 +1,10 @@
-package wordlist.math;
+package com.henrikbeck95.math;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import com.henrikbeck95.math.MathNumberValue;
 
 class MathNumberValueTest {
 	@Test
