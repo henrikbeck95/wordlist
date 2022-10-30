@@ -2,11 +2,6 @@ package com.henrikbeck95.filter;
 
 import java.util.ArrayList;
 
-/*
- * References
- * https://www.vogella.com/tutorials/JavaRegularExpressions/article.html
- */
-
 // MUST BE IMPROVED THE PERFORMANCE
 public class FilterRegexArrayList {
 	public static ArrayList<String> searchCharAtIndex(ArrayList<String> arrayList, char firstCharacter, int index) {

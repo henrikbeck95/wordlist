@@ -3,7 +3,6 @@ package com.henrikbeck95.wordle;
 import java.util.ArrayList;
 
 import com.henrikbeck95.string.StringUtils;
-import com.henrikbeck95.wordle.Wordle;
 
 // ArrayList<Wordle> arrayListWordles
 
