@@ -17,7 +17,7 @@ public class Wordlist {
 		// displayAllWordleSizes(wordles);
 		displayAllWordleValues(wordles);
 	}
-	*/
+	 */
 	// @formatter:on
 
 	private static ArrayList<Wordle> buildWordleExample() {
