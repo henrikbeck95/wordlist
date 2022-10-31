@@ -25,13 +25,13 @@ In case of troubleshoots check these videos out for trying to solve the error
 	1. [JUnit 5 Basics 7 - Creating a JUnit test](https://www.youtube.com/watch?v=EROuIf2Ac_I&list=PLqq-6Pq4lTTa4ad5JISViSb2FVG8Vwa4o&index=7).
 	1. [4. JUnit5 Basics - Test Annotation in JUnit5 | JUnit5 Test Annotation | What is @Test Annotation](https://www.youtube.com/watch?v=zK6bVOhrxrc).
 
-## 
-
-<!--
 ## Description
 
-???
+### Screenshot
 
+![Example 3](./docs/screenshot/usage_example_3.png)
+
+<!--
 ## Installation setup
 
 ???
