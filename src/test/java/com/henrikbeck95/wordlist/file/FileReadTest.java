@@ -14,7 +14,7 @@ class FileReadTest {
 			String pathProject = "C:\\Users\\PC\\Documents\\workspace\\wordlist\\";
 			
 			assertEquals(FileRead.getRelativePathRoot(), pathProject + "src\\main\\java\\com\\henrikbeck95\\wordlist");
-			assertEquals(FileRead.getRelativePathDicitionary("portuguese.txt"), pathProject + "src\\main\\java\\com\\henrikbeck95\\assets\\dictionary\\portuguese.txt");
+			assertEquals(FileRead.getRelativePathDicitionary("portuguese.txt"), pathProject + "src\\main\\java\\com\\henrikbeck95\\wordlist\\assets\\dictionary\\portuguese.txt");
 		} else {
 			String pathProject = "/home/henrikbeck95/Documents/workspace/dictionary-filter\\";
 			

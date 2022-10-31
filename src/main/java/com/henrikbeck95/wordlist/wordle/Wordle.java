@@ -3,6 +3,7 @@ package com.henrikbeck95.wordlist.wordle;
 import java.util.ArrayList;
 
 import com.henrikbeck95.wordlist.file.FileRead;
+import com.henrikbeck95.wordlist.file.FileUtils;
 import com.henrikbeck95.wordlist.filter.FilterRegexArrayList;
 
 public class Wordle {
@@ -22,7 +23,7 @@ public class Wordle {
 		this.wordLengthMinimum = wordLengthMinimum;
 		this.wordLengthMaximum = wordLengthMaximum;
 		this.wordContent = wordContent;
-		this.dictionaryUrl = FileRead.getRelativePathDicitionary(wordDictionaryLanguage);
+		this.dictionaryUrl = wordDictionaryLanguage;
 		this.wordNotContent = wordNotContent;
 		this.wordFinal = wordFinal;
 
@@ -30,16 +31,16 @@ public class Wordle {
 	}
 
 	public void dictionaryListGenerate() {
-		this.arrayList = FileRead.storeEachLineIntoArray(this.dictionaryUrl);
-		this.arrayList = FileRead.normalizeWordLength(this.getArrayList(), this.wordLengthMinimum,
+		this.arrayList = FileUtils.storeEachLineIntoArray(this.dictionaryUrl);
+		this.arrayList = FileUtils.normalizeWordLength(this.getArrayList(), this.wordLengthMinimum,
 				this.wordLengthMaximum);
 
 		if (this.isAccentuation() == false) {
-			this.arrayList = FileRead.normalizeCharactersUtf8(this.getArrayList());
+			this.arrayList = FileUtils.normalizeCharactersUtf8(this.getArrayList());
 		}
 
-		this.arrayList = FileRead.normalizeCase(this.getArrayList(), "lower"); // "upper"
-		this.arrayList = FileRead.normalizeRemoveDuplicate(this.getArrayList());
+		this.arrayList = FileUtils.normalizeCase(this.getArrayList(), "lower"); // "upper"
+		this.arrayList = FileUtils.normalizeRemoveDuplicate(this.getArrayList());
 	}
 
 	public void dictionaryListFilter() {
@@ -80,8 +81,6 @@ public class Wordle {
 	public void stop() {
 		this.setGameEnd(true);
 	}
-
-	// Getters and setters
 
 	// Getters and setters
 
