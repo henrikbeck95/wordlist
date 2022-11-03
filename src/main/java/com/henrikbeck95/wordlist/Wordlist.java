@@ -25,9 +25,9 @@ public class Wordlist {
 
 		String dictionaryUrl = getResourcePath("portuguese");
 
-		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "a", "", "?m?d?".toCharArray())); // 4 elements
-		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "poerd", "", "?????".toCharArray())); // 3 elements
-		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "oip", "aureclvgm", "????s".toCharArray())); // 2 elements
+		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "a", "", "?m?d?")); // 4 elements
+		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "poerd", "", "?????")); // 3 elements
+		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "oip", "aureclvgm", "????s")); // 2 elements
 
 		return wordles;
 	}
@@ -38,32 +38,32 @@ public class Wordlist {
 		// @formatter:off
 		// Languages
 		// String dictionaryUrl = getResourcePath("informTheLanguage");
-		// wordles.add(new Wordle(false, 5, 5, "french", "", "", "?????".toCharArray())); // XXXXXX elements
-		// wordles.add(new Wordle(false, 5, 5, "english", "", "", "?????".toCharArray())); // 5196 elements
-		// wordles.add(new Wordle(false, 5, 5, "portuguese", "", "", "?????".toCharArray())); // 5428 elements
-		// wordles.add(new Wordle(false, 5, 5, "spanish", "", "", "?????".toCharArray())); // XXXXXX elements
+		// wordles.add(new Wordle(false, 5, 5, "french", "", "", "?????")); // XXXXXX elements
+		// wordles.add(new Wordle(false, 5, 5, "english", "", "", "?????")); // 5196 elements
+		// wordles.add(new Wordle(false, 5, 5, "portuguese", "", "", "?????")); // 5428 elements
+		// wordles.add(new Wordle(false, 5, 5, "spanish", "", "", "?????")); // XXXXXX elements
 		// @formatter:on
 
 		String dictionaryUrl = getResourcePath("portuguese");
 
 		// @formatter:off
 		// Implementation usage
-		// wordles.add(new Wordle(true, 1, 25, dictionaryUrl, "", "", "?????".toCharArray())); // 261081 elements
-		// wordles.add(new Wordle(false, 1, 25, dictionaryUrl, "", "", "?????".toCharArray())); // 244769 elements
-		// wordles.add(new Wordle(true, 5, 5, dictionaryUrl, "", "", "?????".toCharArray())); // 5976 elements
-		// wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "", "", "?????".toCharArray())); // 5428 elements
-		// wordles.add(new Wordle(false, 19, 30, dictionaryUrl, "", "", "?????".toCharArray())); // 249 elements
-		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "", "", "?????".toCharArray())); // 248 elements
-		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "aeiou", "", "?????".toCharArray())); // 68 elements
-		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "aeiou", "", "?o???".toCharArray())); // 40 elements
-		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "aeiou", "c", "?????".toCharArray())); // 30 elements
-		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "aeiou", "c", "?o???".toCharArray())); // 17 elements
-		// wordles.add(new Wordle(false, 21, 30, dictionaryUrl, "", "", "?????".toCharArray())); // 31 elements
-		// wordles.add(new Wordle(false, 22, 30, dictionaryUrl, "", "", "?????".toCharArray())); // 11 elements
-		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "a", "", "?m?d?".toCharArray())); // 4 elements
-		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "poerd", "", "?????".toCharArray())); // 3 elements
-		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "oip", "aureclvgm", "????s".toCharArray())); // 2 elements
-		// wordles.add(new Wordle(false, 24, 30, dictionaryUrl, "", "", "?????".toCharArray())); // 1 element
+		// wordles.add(new Wordle(true, 1, 25, dictionaryUrl, "", "", "?????")); // 261081 elements
+		// wordles.add(new Wordle(false, 1, 25, dictionaryUrl, "", "", "?????")); // 244769 elements
+		// wordles.add(new Wordle(true, 5, 5, dictionaryUrl, "", "", "?????")); // 5976 elements
+		// wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "", "", "?????")); // 5428 elements
+		// wordles.add(new Wordle(false, 19, 30, dictionaryUrl, "", "", "?????")); // 249 elements
+		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "", "", "?????")); // 248 elements
+		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "aeiou", "", "?????")); // 68 elements
+		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "aeiou", "", "?o???")); // 40 elements
+		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "aeiou", "c", "?????")); // 30 elements
+		// wordles.add(new Wordle(false, 19, 25, dictionaryUrl, "aeiou", "c", "?o???")); // 17 elements
+		// wordles.add(new Wordle(false, 21, 30, dictionaryUrl, "", "", "?????")); // 31 elements
+		// wordles.add(new Wordle(false, 22, 30, dictionaryUrl, "", "", "?????")); // 11 elements
+		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "a", "", "?m?d?")); // 4 elements
+		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "poerd", "", "?????")); // 3 elements
+		wordles.add(new Wordle(false, 5, 5, dictionaryUrl, "oip", "aureclvgm", "????s")); // 2 elements
+		// wordles.add(new Wordle(false, 24, 30, dictionaryUrl, "", "", "?????")); // 1 element
 		// @formatter:on
 
 		// Display only a single instance

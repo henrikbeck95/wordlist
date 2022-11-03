@@ -18,14 +18,14 @@ public class Wordle {
 	private char wordFinal[];
 
 	public Wordle(boolean accentuation, int wordLengthMinimum, int wordLengthMaximum, String wordDictionaryLanguage,
-			String wordContent, String wordNotContent, char wordFinal[]) {
+			String wordContent, String wordNotContent, String wordFinal) {
 		this.accentuation = accentuation;
 		this.wordLengthMinimum = wordLengthMinimum;
 		this.wordLengthMaximum = wordLengthMaximum;
 		this.wordContent = wordContent;
 		this.dictionaryUrl = wordDictionaryLanguage;
 		this.wordNotContent = wordNotContent;
-		this.wordFinal = wordFinal;
+		this.wordFinal = wordFinal.toCharArray();
 
 		this.play();
 	}
