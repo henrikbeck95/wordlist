@@ -41,6 +41,14 @@
 		
 		<dependency>
 			<groupId>com.henrikbeck95.library</groupId>
+			<artifactId>search</artifactId>
+			<version>0.0.1</version>
+			<scope>system</scope>
+			<systemPath>${pom.basedir}/src/main/resources/libs/search.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.henrikbeck95.library</groupId>
 			<artifactId>string</artifactId>
 			<version>0.0.1</version>
 			<scope>system</scope>

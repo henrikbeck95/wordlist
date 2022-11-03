@@ -2,9 +2,8 @@ package com.henrikbeck95.wordlist.wordle;
 
 import java.util.ArrayList;
 
-import com.henrikbeck95.wordlist.file.FileRead;
+import com.henrikbeck95.library.search.regex.RegexArrayList;
 import com.henrikbeck95.wordlist.file.FileUtils;
-import com.henrikbeck95.wordlist.filter.FilterRegexArrayList;
 
 public class Wordle {
 	private boolean accentuation;
@@ -47,15 +46,15 @@ public class Wordle {
 		// @formatter:off
 		
 		if (this.getArrayList().isEmpty() == false && this.isGameEnd() == false) {
-			this.arrayList = FilterRegexArrayList.searchContainsCharacters(this.getArrayList(), this.getWordContent().toCharArray());
+			this.arrayList = RegexArrayList.searchContainsCharacters(this.getArrayList(), this.getWordContent().toCharArray());
 		}
 		
 		if (this.getArrayList().isEmpty() == false && this.isGameEnd() == false) {
-			this.arrayList = FilterRegexArrayList.searchDoesNotContainsCharacters(this.getArrayList(), this.getWordNotContent().toCharArray());
+			this.arrayList = RegexArrayList.searchDoesNotContainsCharacters(this.getArrayList(), this.getWordNotContent().toCharArray());
 		}
 		
 		if (this.getArrayList().isEmpty() == false && this.isGameEnd() == false) {
-			this.arrayList = FilterRegexArrayList.searchAccordingToCharacters(this.getArrayList(), this.getWordFinal());
+			this.arrayList = RegexArrayList.searchAccordingToCharacters(this.getArrayList(), this.getWordFinal());
 		}
 		
 		// @formatter:on
