@@ -17,42 +17,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.henrikbeck95.library</groupId>
-			<artifactId>math</artifactId>
+			<artifactId>universal</artifactId>
 			<version>0.0.1</version>
 			<scope>system</scope>
-			<systemPath>${pom.basedir}/src/main/resources/libs/math.jar</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.henrikbeck95.library</groupId>
-			<artifactId>operating_system</artifactId>
-			<version>0.0.1</version>
-			<scope>system</scope>
-			<systemPath>${pom.basedir}/src/main/resources/libs/operating_system.jar</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.henrikbeck95.library</groupId>
-			<artifactId>sort</artifactId>
-			<version>0.0.1</version>
-			<scope>system</scope>
-			<systemPath>${pom.basedir}/src/main/resources/libs/sort.jar</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.henrikbeck95.library</groupId>
-			<artifactId>search</artifactId>
-			<version>0.0.1</version>
-			<scope>system</scope>
-			<systemPath>${pom.basedir}/src/main/resources/libs/search.jar</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.henrikbeck95.library</groupId>
-			<artifactId>string</artifactId>
-			<version>0.0.1</version>
-			<scope>system</scope>
-			<systemPath>${pom.basedir}/src/main/resources/libs/string.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/libs/universal.jar</systemPath>
 		</dependency>
 	
 		<dependency>

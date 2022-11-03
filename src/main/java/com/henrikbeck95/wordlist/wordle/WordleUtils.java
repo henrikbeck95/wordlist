@@ -2,7 +2,7 @@ package com.henrikbeck95.wordlist.wordle;
 
 import java.util.ArrayList;
 
-import com.henrikbeck95.library.sort.SortVector;
+import com.henrikbeck95.library.universal.sort.SortVector;
 
 public class WordleUtils {
 	protected static String attributeEmptyValueIfThereIsNoWordleIndex(int index, Wordle wordle) {

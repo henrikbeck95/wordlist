@@ -2,7 +2,7 @@ package com.henrikbeck95.wordlist;
 
 import java.util.ArrayList;
 
-import com.henrikbeck95.wordlist.file.FileRead;
+import com.henrikbeck95.library.universal.file.FileRead;
 import com.henrikbeck95.wordlist.wordle.Wordle;
 import com.henrikbeck95.wordlist.wordle.WordleDisplay;
 
@@ -15,7 +15,10 @@ public class Wordlist {
 
 		// System.out.println("portuguese");
 		// displayAllWordleSizes(wordles);
-		displayAllWordleValues(wordles);
+//		displayAllWordleValues(wordles);
+		
+		System.out.println(wordles.get(0).getArrayList().toString());
+		System.out.println(wordles.get(0).toString());
 	}
 	 */
 	// @formatter:on

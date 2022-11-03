@@ -2,8 +2,8 @@ package com.henrikbeck95.wordlist.wordle;
 
 import java.util.ArrayList;
 
-import com.henrikbeck95.library.search.regex.RegexArrayList;
-import com.henrikbeck95.wordlist.file.FileUtils;
+import com.henrikbeck95.library.universal.search.regex.RegexArrayList;
+import com.henrikbeck95.library.universal.file.FileUtils;
 
 public class Wordle {
 	private boolean accentuation;
@@ -76,6 +76,17 @@ public class Wordle {
 			}
 		}
 	}
+	
+	@Override
+	public String toString() {
+		String aux = "";
+		
+		for (int i = 0; i < this.getArrayList().size(); i++) {
+			aux += ((i + 1) + "º " + this.getArrayList().get(i) + "\n");
+		}
+		
+		return aux;
+    }
 
 	public void stop() {
 		this.setGameEnd(true);
