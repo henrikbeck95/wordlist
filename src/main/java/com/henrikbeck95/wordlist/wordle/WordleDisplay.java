@@ -85,7 +85,6 @@ public class WordleDisplay {
 		}
 
 		return aux + Fill.character(sizeAdjustedIncrease, " ") + "|%n";
-		//return aux + StringUtils.fillSpaces(sizeAdjustedIncrease) + "|%n";
 	}
 
 	private static String displayLineFormat(int index, int size, int amountOfWordle) {
@@ -117,6 +116,5 @@ public class WordleDisplay {
 
 		// sizeAdjustedIncrease
 		return aux + Fill.character(sizeAdjustedIncrease, " ") + "|%n";
-		//return aux + StringUtils.fillSpaces(sizeAdjustedIncrease) + "|%n";
 	}
 }
