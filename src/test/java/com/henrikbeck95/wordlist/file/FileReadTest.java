@@ -4,13 +4,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import com.henrikbeck95.wordlist.file.FileRead;
-import com.henrikbeck95.wordlist.os.OsInfo;
+import com.henrikbeck95.library.operating_system.OperatingSystemInfo;
 
 class FileReadTest {
 	@Test
 	void test() {
-		if (OsInfo.isWindows() == true) {
+		if (OperatingSystemInfo.isWindows() == true) {
 			String pathProject = "C:\\Users\\PC\\Documents\\workspace\\wordlist\\";
 			
 			assertEquals(FileRead.getRelativePathRoot(), pathProject + "src\\main\\java\\com\\henrikbeck95\\wordlist");

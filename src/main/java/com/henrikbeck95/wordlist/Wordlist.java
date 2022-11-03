@@ -8,7 +8,6 @@ import com.henrikbeck95.wordlist.wordle.WordleDisplay;
 
 public class Wordlist {
 	// @formatter:off
-	/*
 	public static void main(String[] args) {
 		// ArrayList<Wordle> wordles = buildWordleTemplete();
 		ArrayList<Wordle> wordles = buildWordleExample();
@@ -17,6 +16,7 @@ public class Wordlist {
 		// displayAllWordleSizes(wordles);
 		displayAllWordleValues(wordles);
 	}
+	/*
 	 */
 	// @formatter:on
 

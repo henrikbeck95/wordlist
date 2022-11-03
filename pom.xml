@@ -25,6 +25,14 @@
 		
 		<dependency>
 			<groupId>com.henrikbeck95.library</groupId>
+			<artifactId>operating_system</artifactId>
+			<version>0.0.1</version>
+			<scope>system</scope>
+			<systemPath>${pom.basedir}/src/main/resources/libs/operating_system.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.henrikbeck95.library</groupId>
 			<artifactId>sort</artifactId>
 			<version>0.0.1</version>
 			<scope>system</scope>
