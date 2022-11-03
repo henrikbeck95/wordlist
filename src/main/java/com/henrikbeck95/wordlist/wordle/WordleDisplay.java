@@ -2,7 +2,8 @@ package com.henrikbeck95.wordlist.wordle;
 
 import java.util.ArrayList;
 
-import com.henrikbeck95.wordlist.string.StringUtils;
+import com.henrikbeck95.library.string.Amount;
+import com.henrikbeck95.library.string.Fill;
 
 // ArrayList<Wordle> arrayListWordles
 
@@ -66,7 +67,7 @@ public class WordleDisplay {
 	private static String displayLineHeaderFormat(int index, int size, int amountOfWordle) {
 		String aux = "";
 
-		int sizeAdjustedIncrease = StringUtils.amountOfCharacters(index + 1) + 1;
+		int sizeAdjustedIncrease = Amount.countCharacters(index + 1) + 1;
 
 		for (int i = amountOfWordle; i >= 0; i--) {
 			if (i > 1) {
@@ -83,16 +84,16 @@ public class WordleDisplay {
 			}
 		}
 
-		// return aux + "|%n";
-		return aux + StringUtils.fillSpaces(sizeAdjustedIncrease) + "|%n";
+		return aux + Fill.character(sizeAdjustedIncrease, " ") + "|%n";
+		//return aux + StringUtils.fillSpaces(sizeAdjustedIncrease) + "|%n";
 	}
 
 	private static String displayLineFormat(int index, int size, int amountOfWordle) {
 		String aux = "";
 
 		int arrayPositionToBeApplyed = 1;
-		int sizeAdjustedDecrease = (size - StringUtils.amountOfCharacters(index + 1));
-		int sizeAdjustedIncrease = StringUtils.amountOfCharacters(index + 1) + 2;
+		int sizeAdjustedDecrease = (size - Amount.countCharacters(index + 1));
+		int sizeAdjustedIncrease = Amount.countCharacters(index + 1) + 2;
 
 		for (int i = amountOfWordle; i >= 0; i--) {
 			if (i > 1) {
@@ -115,6 +116,7 @@ public class WordleDisplay {
 		}
 
 		// sizeAdjustedIncrease
-		return aux + StringUtils.fillSpaces(sizeAdjustedIncrease) + "|%n";
+		return aux + Fill.character(sizeAdjustedIncrease, " ") + "|%n";
+		//return aux + StringUtils.fillSpaces(sizeAdjustedIncrease) + "|%n";
 	}
 }

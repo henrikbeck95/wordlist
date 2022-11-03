@@ -22,6 +22,14 @@
 			<scope>system</scope>
 			<systemPath>${pom.basedir}/src/main/resources/libs/math.jar</systemPath>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.henrikbeck95.library</groupId>
+			<artifactId>string</artifactId>
+			<version>0.0.1</version>
+			<scope>system</scope>
+			<systemPath>${pom.basedir}/src/main/resources/libs/string.jar</systemPath>
+		</dependency>
 	
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
