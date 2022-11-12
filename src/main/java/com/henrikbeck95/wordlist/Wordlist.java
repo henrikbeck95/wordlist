@@ -2,7 +2,7 @@ package com.henrikbeck95.wordlist;
 
 import java.util.ArrayList;
 
-import com.henrikbeck95.library.universal.file.FileRead;
+import com.henrikbeck95.library.common.file.FileRead;
 import com.henrikbeck95.wordlist.wordle.Wordle;
 import com.henrikbeck95.wordlist.wordle.WordleDisplay;
 

@@ -17,10 +17,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.henrikbeck95.library</groupId>
-			<artifactId>universal</artifactId>
+			<artifactId>common</artifactId>
 			<version>0.0.1</version>
 			<scope>system</scope>
-			<systemPath>${pom.basedir}/src/main/resources/libs/universal.jar</systemPath>
+			<systemPath>${pom.basedir}/src/main/resources/libs/common.jar</systemPath>
 		</dependency>
 	
 		<dependency>

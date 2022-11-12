@@ -2,8 +2,8 @@ package com.henrikbeck95.wordlist.wordle;
 
 import java.util.ArrayList;
 
-import com.henrikbeck95.library.universal.search.regex.RegexArrayList;
-import com.henrikbeck95.library.universal.file.FileUtils;
+import com.henrikbeck95.library.common.search.regex.RegexArrayList;
+import com.henrikbeck95.library.common.file.FileUtils;
 
 public class Wordle {
 	private boolean accentuation;

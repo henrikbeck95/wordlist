@@ -2,8 +2,8 @@ package com.henrikbeck95.wordlist.wordle;
 
 import java.util.ArrayList;
 
-import com.henrikbeck95.library.universal.string.Amount;
-import com.henrikbeck95.library.universal.string.Fill;
+import com.henrikbeck95.library.common.string.Amount;
+import com.henrikbeck95.library.common.string.Fill;
 
 // ArrayList<Wordle> arrayListWordles
 
